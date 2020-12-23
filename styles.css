@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+}
+
+nav{
+    color: darkblue;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgba(19, 121, 255, 0.822);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+nav div:hover{
+    background-color: rgba(19, 121, 255, 1);
+    cursor: pointer;
+    color: black;
+    padding: 5px;
+}
+
+h5{
+    font-style: normal;
+    color: darkblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.productClass{
+    display: flex;
+}
+
+.productClass img{
+    width: 150px;
+}
+
+#productPic{
+    margin-left: 10px;
+    margin-right: auto;
+}
+#productPic img{
+    width:80px;
+    height:80px
+}
+
+#video1 img{
+    width: 90%; 
+    max-width: 700px;
+}
+
+#buyingPlans{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-direction: row;
+    background-color: orange;
+    text-align: center;
+}
+
+.buyingPlanHeading{
+    background-color:red;
+}
+
+.buyingPlanOuter{
+    padding: 0px;
+    height: 350px;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+
+.buyinigPlanInner{
+    padding-top: 50px;
+}
+
+@media only screen and (max-width:800px){
+    #buyingPlans{
+        flex-direction: column;
+    }
+    .buyingPlanOuter{
+        width: 85vw;
+    }
+}
